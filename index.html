@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>미주 한인 광고 & 정보 공유 사이트</title>
+
+  <style>
+
+    /* 기본 스타일 */
+
+    body {
+
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+      margin: 0; padding: 0; background: #f5f5f5; color: #333;
+
+    }
+
+    header {
+
+      background-color: #004d99;
+
+      color: white;
+
+      padding: 20px 10px;
+
+      text-align: center;
+
+    }
+
+    header h1 {
+
+      margin: 0;
+
+      font-size: 2em;
+
+    }
+
+    nav {
+
+      background: #0066cc;
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+    }
+
+    nav button {
+
+      background: transparent;
+
+      border: none;
+
+      color: white;
+
+      padding: 15px 20px;
+
+      cursor: pointer;
+
+      font-size: 1em;
+
+      transition: background-color 0.3s;
+
+    }
+
+    nav button:hover, nav button.active {
+
+      background: #004080;
+
+    }
+
+    main {
+
+      padding: 20px;
+
+      max-width: 1000px;
+
+      margin: 0 auto;
+
+      background: white;
+
+      min-height: 600px;
+
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    }
+
+    section {
+
+      display: none;
+
+    }
+
+    section.active {
+
+      display: block;
+
+    }
+
+    h2 {
+
+      border-bottom: 3px solid #0066cc;
+
+      padding-bottom: 8px;
+
+      margin-bottom: 15px;
+
+      color: #004d99;
+
+    }
+
+    ul.list {
+
+      list-style: none;
+
+      padding-left: 0;
+
+    }
+
+    ul.list li {
+
+      padding: 10px 0;
+
+      border-bottom: 1px solid #ddd;
+
+    }
+
+    ul.list li:last-child {
+
+      border-bottom: none;
+
+    }
+
+    /* 반응형 */
+
+    @media (max-width: 600px) {
+
+      nav button {
+
+        flex: 1 1 100%;
+
+        padding: 12px 0;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>미주 한인 광고 & 정보 공유</h1>
+
+    <p>생활, 구직, 부동산, 중고거래 등 한인 커뮤니티를 위한 공간</p>
+
+  </header>
+
+
+
+  <nav id="menu">
+
+    <button class="active" data-target="life">생활 및 문화 정보</button>
+
+    <button data-target="business">한인 기업 광고</button>
+
+    <button data-target="jobs">구직/구인</button>
+
+    <button data-target="realestate">부동산 광고</button>
+
+    <button data-target="company">회사 광고</button>
+
+    <button data-target="roommate">룸메이트 찾기</button>
+
+    <button data-target="friends">사람 찾기</button>
+
+    <button data-target="market">중고매매</button>
+
+  </nav>
+
+
+
+  <main>
+
+    <section id="life" class="active">
+
+      <h2>생활 및 문화 정보</h2>
+
+      <ul class="list">
+
+        <li>한인 마트 할인 정보</li>
+
+        <li>지역별 문화 행사 안내</li>
+
+        <li>한인 커뮤니티 모임 소개</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="business">
+
+      <h2>한인 기업 광고</h2>
+
+      <ul class="list">
+
+        <li>서울 식당 - 정통 한식 맛집</li>
+
+        <li>박 카센터 - 믿을 수 있는 자동차 수리</li>
+
+        <li>김 부동산 - 한인 맞춤 부동산 서비스</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="jobs">
+
+      <h2>구직/구인 광고</h2>
+
+      <ul class="list">
+
+        <li>[캘리포니아] 편의점 직원 구함</li>
+
+        <li>[뉴욕] 한인 마트 캐셔 모집</li>
+
+        <li>[텍사스] 한식당 주방 보조 모집</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="realestate">
+
+      <h2>부동산 구매/판매 광고</h2>
+
+      <ul class="list">
+
+        <li>로스앤젤레스 아파트 판매 - $350,000</li>
+
+        <li>애틀란타 주택 임대 - 월 $1,200</li>
+
+        <li>버지니아 콘도 구매 희망자 연락 주세요</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="company">
+
+      <h2>회사 광고</h2>
+
+      <ul class="list">
+
+        <li>ABC 무역회사 - 수입/수출 전문</li>
+
+        <li>한인 법률 상담 - 무료 1차 상담 제공</li>
+
+        <li>로컬 마케팅 회사 - 한인 비즈니스 홍보</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="roommate">
+
+      <h2>룸메이트 찾기</h2>
+
+      <ul class="list">
+
+        <li>LA 지역 룸메이트 구함 - 연락 주세요</li>
+
+        <li>뉴욕 2베드룸 쉐어 하실 분</li>
+
+        <li>시카고 하우스 쉐어 - 편리한 위치</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="friends">
+
+      <h2>사람 (친구) 찾기</h2>
+
+      <ul class="list">
+
+        <li>한인 친구 찾기 - 취미 공유 가능</li>
+
+        <li>미국 유학생 모임</li>
+
+        <li>취미 활동 같이 하실 분 환영</li>
+
+      </ul>
+
+    </section>
+
+
+
+    <section id="market">
+
+      <h2>중고매매</h2>
+
+      <ul class="list">
+
+        <li>중고차 - 2010년식 혼다 시빅 $5,000</li>
+
+        <li>가전제품 - 세탁기 판매합니다</li>
+
+        <li>가구 - 소파 무료 나눔</li>
+
+      </ul>
+
+    </section>
+
+  </main>
+
+
+
+  <script>
+
+    const buttons = document.querySelectorAll('nav button');
+
+    const sections = document.querySelectorAll('main section');
+
+
+
+    buttons.forEach(btn => {
+
+      btn.addEventListener('click', () => {
+
+        // 버튼 active 처리
+
+        buttons.forEach(b => b.classList.remove('active'));
+
+        btn.classList.add('active');
+
+
+
+        // 섹션 전환
+
+        const target = btn.getAttribute('data-target');
+
+        sections.forEach(sec => {
+
+          if (sec.id === target) sec.classList.add('active');
+
+          else sec.classList.remove('active');
+
+        });
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html>
