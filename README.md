@@ -1,1 +1,1 @@
-# US korean-ad-site
+# 애트란타 korean-ad-site
